@@ -45,12 +45,12 @@ inquirer
     {
       type: 'input',
       message: 'What does the user need to know about using the repo?',
-      name: 'userQuestions',
+      name: 'usage',
     },
     {
       type: 'input',
       message: 'What does the user need to about contributing to the repo?',
-      name: 'userRepoRequest',
+      name: 'contributing',
     },
   ])
   .then((response) => {
@@ -64,21 +64,21 @@ inquirer
     ## License: This project is licensed under the ${response.license} license
     ## Installation: to install neccessary dependencies, run the following command: ${response.dependencies}
     ## Tests: To run tests, run the following command: ${response.test}
-    ## Questions: ${response.userQuestions}
-    ## Contributions: ${response.userRepoRequest}`;
+    ## Questions: ${response.usage}
+    ## Contributions: ${response.contributing}`;
 
     fs.writeFile(`README.md`, generateMarkdown(response), (err) =>
       err ? console.log(err) : console.log('File saved successfully')
     );
   });
 
-const questions = [];
+// const questions = [];
 
-// function to write README file
-function writeToFile(fileName, data) {}
+// // function to write README file
+// function writeToFile(fileName, data) {}
 
-// function to initialize program
-function init() {}
+// // function to initialize program
+// function init() {}
 
-// function call to initialize program
-init();
+// // function call to initialize program
+// init();
