@@ -1,17 +1,17 @@
-# README Generator
+# README Gen
 
   ## Description 
 
-  Quickly generate a readme file given a list of questions
+  Quickly generate a read me file in the terminal
 
   ## Table of Contents
 
-  *[Installation](#installation)
-  *[Usage](#usage)
-  *[License](#license)
-  *[Contributing](#contributing)
-  *[Tests](#tests)
-  *[Questions](#questions)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [Questions](#questions)
 
   ## Installation
 
@@ -19,7 +19,7 @@
 
   ## Usage
 
-  If you would like to know more about the project please contact me at chrisocarbajal@gmail.com
+  Using the command line generate a readme file quickly
 
   ## License
 
@@ -27,7 +27,7 @@
 
   ## Contributing
 
-  Please contact me at chrisocarbajal@gmail.com
+  Please email me or contact me 
 
   ## Tests
 
@@ -35,5 +35,6 @@
 
   ## Questions
 
-  Please contact me at chrisocarbajal@gmail.com
+  venturecarbajal
+  test@gmail.com
 

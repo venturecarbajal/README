@@ -8,12 +8,12 @@ function generateMarkdown(response) {
 
   ## Table of Contents
 
-  *[Installation](#installation)
-  *[Usage](#usage)
-  *[License](#license)
-  *[Contributing](#contributing)
-  *[Tests](#tests)
-  *[Questions](#questions)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [Questions](#questions)
 
   ## Installation
 
@@ -21,7 +21,7 @@ function generateMarkdown(response) {
 
   ## Usage
 
-  ${response.userQuestions}
+  ${response.usage}
 
   ## License
 
@@ -29,7 +29,7 @@ function generateMarkdown(response) {
 
   ## Contributing
 
-  ${response.username}
+  ${response.contributing}
 
   ## Tests
 
@@ -37,7 +37,8 @@ function generateMarkdown(response) {
 
   ## Questions
 
-  ${response.userRepoRequest}
+  ${response.username}
+  ${response.email}
 
 `;
 }
