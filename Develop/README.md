@@ -1,40 +1,43 @@
-# README Gen
+# README Generator
 
-  ## Description 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-  Quickly generate a read me file in the terminal
+## Description
 
-  ## Table of Contents
+Quickly generate a readme file in the terminal
 
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [License](#license)
-  * [Contributing](#contributing)
-  * [Tests](#tests)
-  * [Questions](#questions)
+## Table of Contents
 
-  ## Installation
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
-  npm i inquirer
+## Installation
 
-  ## Usage
+          npm i
 
-  Using the command line generate a readme file quickly
+## Usage
 
-  ## License
+Application is using the inquirer package
 
-  MIT
+![](demo_readme.gif)
 
-  ## Contributing
+## License
 
-  Please email me or contact me 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-  ## Tests
+## Contributing
 
-  npm test
+Please email or contact me via github
 
-  ## Questions
+## Tests
 
-  venturecarbajal
-  test@gmail.com
+        npm test
 
+## Questions
+
+venturecarbajal
+test@email.com
