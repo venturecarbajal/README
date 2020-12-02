@@ -30,7 +30,7 @@ inquirer
       type: 'list',
       message: 'What kind of license should your project have?',
       name: 'license',
-      choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
+      choices: ['MIT', 'APACHE2.0', 'GPL3.0', 'BSD3', 'None'],
     },
     {
       type: 'input',
@@ -54,19 +54,20 @@ inquirer
     },
   ])
   .then((response) => {
-    // console.log(response.username);
+    // const textToWrite = `
+    // ## Github username: ${response.username}
+    // Email address: ${response.email}
+    // ## Project name: ${response.projectName}
+    // ## Project description: ${response.projectDescription}
+    // ## License: This project is licensed under the ${response.license} license
+    // ## Installation: to install neccessary dependencies, run the following command: ${response.dependencies}
+    // ## Tests: To run tests, run the following command: ${response.test}
+    // ## Questions: ${response.usage}
+    // ## Contributions: ${response.contributing}`;
 
-    const textToWrite = `
-    ## Github username: ${response.username}
-    Email address: ${response.email}
-    ## Project name: ${response.projectName}
-    ## Project description: ${response.projectDescription}
-    ## License: This project is licensed under the ${response.license} license
-    ## Installation: to install neccessary dependencies, run the following command: ${response.dependencies}
-    ## Tests: To run tests, run the following command: ${response.test}
-    ## Questions: ${response.usage}
-    ## Contributions: ${response.contributing}`;
+    const readMeContent = generateMarkdown(response);
 
+    fs.writeFile('README.md', readMeContent, () => {});
     fs.writeFile(`README.md`, generateMarkdown(response), (err) =>
       err ? console.log(err) : console.log('File saved successfully')
     );

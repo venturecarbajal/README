@@ -2,6 +2,9 @@
 function generateMarkdown(response) {
   return `# ${response.projectName}
 
+  ${getLicenseBadge(response.license)}
+
+
   ## Description 
 
   ${response.projectDescription}
@@ -17,7 +20,7 @@ function generateMarkdown(response) {
 
   ## Installation
 
-  ${response.dependencies}
+          ${response.dependencies}
 
   ## Usage
 
@@ -25,7 +28,7 @@ function generateMarkdown(response) {
 
   ## License
 
-  ${response.license}
+  ${getLicenseBadge(response.license)}
 
   ## Contributing
 
@@ -33,7 +36,7 @@ function generateMarkdown(response) {
 
   ## Tests
 
-  ${response.test}
+          ${response.test}
 
   ## Questions
 
@@ -41,6 +44,10 @@ function generateMarkdown(response) {
   ${response.email}
 
 `;
+}
+
+function getLicenseBadge(license) {
+  return `[![License: ${license}](https://img.shields.io/badge/License-${license}-blue.svg)](https://opensource.org/licenses/${license})`;
 }
 
 module.exports = generateMarkdown;
